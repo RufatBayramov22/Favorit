@@ -1,0 +1,194 @@
+.footer {
+  width: 100%;
+  background: #262725;
+  .contanier {
+    .row {
+      flex-direction: column;
+      align-items: center;
+      h3 {
+        color: #ffefd2;
+        margin-bottom: 2%;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+      .footerComp {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 3%;
+        margin-bottom: 5%;
+        .footerLogo {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          margin-right: 10%;
+          img {
+            margin-bottom: 20px;
+          }
+          a {
+            color: #ffefd2;
+
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+          p {
+            color: #ffefd2;
+
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            display: flex;
+            flex-direction: column;
+            span {
+              width: 100%;
+              height: 2px;
+              border-radius: 5px;
+              background: #ffefd2;
+            }
+          }
+        }
+        .navigation {
+          display: flex;
+          flex-direction: column;
+          gap: 3%;
+          h2 {
+            color: #ffefd2;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+          a {
+            color: #ffefd2;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+        .partners {
+          display: flex;
+          flex-direction: column;
+          gap: 3%;
+          h2 {
+            color: #ffefd2;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+          a {
+            color: #ffefd2;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+        .socialMedia {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 6%;
+          h2 {
+            color: #ffefd2;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+          svg {
+            color: #ffefd2;
+            width: 25px;
+            height: 25px;
+          }
+        }
+        .contacts {
+          display: flex;
+          flex-direction: column;
+          gap: 6%;
+          h2 {
+            color: #ffefd2;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+          p {
+            color: #ffefd2;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width:1056px) {
+  .footer{
+    width: 100%;
+    .contanier{
+      .row{
+        .footerComp{
+          flex-direction: column;
+          .footerLogo{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            a{
+              font-size: 20px;
+            }
+            img{
+              width: 70%;
+              margin-left: 12%;
+            }
+          }
+          .navigation{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 15%;
+          }
+          .partners{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 15%;
+          }
+          .socialMedia{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 15%;
+            svg{
+              margin-bottom: 3%;
+            }
+          }
+          .contacts{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 15%;
+          }
+        }
+      }
+    }
+  }
+}

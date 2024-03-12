@@ -1,0 +1,517 @@
+.catalogMain {
+  width: 100%;
+
+  .contanier {
+    .row {
+      flex-direction: column;
+      .respons{
+        display: none;
+      }
+      .catalogPreview {
+        width: 100%;
+        margin-top: 5%;
+        display: flex;
+        gap: 10%;
+        .catalogScrool {
+          width: 37%;
+          border-radius: 10px;
+          border: 2px solid #f04923;
+          height: 500px;
+          overflow-y: scroll;
+          // &::-webkit-scrollbar {
+          //   width: 10px;
+          // }
+          // &::-webkit-scrollbar-track {
+          //   border-radius: 10px;
+          //   background-color: transparent;
+          //   border: #004f3d 3px solid;
+          //   margin-right: 2px;
+          //   width: 5px;
+          // }
+          // &::-webkit-scrollbar-thumb:hover {
+          //   background-color: #d63e1c;
+          //   border-radius: 50px;
+          //   width: 2px;
+          // }
+          .secondSwiper {
+            display: none;
+          }
+     
+          
+          h4 {
+            color: #004f3d;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: bold;
+            line-height: normal;
+            padding: 5px;
+          }
+          p {
+            color: #000;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: bold;
+            line-height: normal;
+            padding: 5px;
+            cursor: pointer;
+          }
+          .swiper-scrollbar-lock {
+            display: block !important;
+          }
+          .swiper-scrollbar-drag {
+            height: 50px !important;
+            border-radius: 2px;
+            background: #f04923;
+          }
+        }
+        .catalogCards {
+          display: flex;
+          flex-direction: column;
+          width: 93%;
+          .firstCards {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            .bestCard {
+              width: 30%;
+              border-radius: 10px;
+              border: 2px solid #f04923;
+              img{
+                border-radius: 10px;
+              }
+              .best {
+                width: 100%;
+              }
+              .bestInfo {
+                width: 98%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 4%;
+                span {
+                  color: #9c9c9c;
+                  font-size: 14px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: normal;
+                }
+              }
+              .bestDesc {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 4%;
+                h2 {
+                  color: #000;
+                  font-size: 15px;
+                  font-style: normal;
+                  font-weight: bold;
+                  line-height: normal;
+              }
+                }
+                p {
+                  color: #000;
+                  font-size: 12px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 20px; /* 166.667% */
+                }
+              }
+            }
+          }
+          .secondCards {
+            display: flex;
+            gap: 5%;
+            margin-top: 10%;
+            .bestCard {
+              width: 30%;
+              border-radius: 10px;
+              border: 2px solid #f04923;
+
+              .best {
+                width: 100%;
+              }
+              .bestInfo {
+                width: 98%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 4%;
+                span {
+                  color: #9c9c9c;
+                  font-size: 14px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: normal;
+                }
+              }
+              .bestDesc {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 4%;
+                h2 {
+                  color: #000;
+                  font-size: 27px;
+                  font-style: normal;
+                  font-weight: 500;
+                  line-height: normal;
+                }
+                p {
+                  color: #000;
+                  font-size: 12px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 20px; /* 166.667% */
+                }
+              }
+            }
+          }
+        }
+      }
+      .specialSecond {
+        display: none;
+      }
+      .specialCard {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 4%;
+        width: 100%;
+        .specialInfo {
+          width: 50%;
+          background-color: #f04923;
+          height: 300px;
+          border-radius: 0 0 20px 20px;
+          h2 {
+            color: #ffefd2;
+            font-size: 50px;
+            font-style: normal;
+            font-weight: bold;
+            line-height: normal;
+            padding: 2%;
+          }
+          p {
+            color: #ffefd2;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 25px; /* 125% */
+            padding: 2%;
+          }
+        }
+      }
+    }
+  }
+
+
+@media screen and (max-width: 920px) {
+  .catalogMain {
+    width: 100%;
+    .contanier {
+      .row {
+        .respons{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+        }
+        .catalogPreview {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .catalogScrool {
+            width: 76%;
+            margin-bottom: 5%;
+            height: auto;
+            overflow-y: hidden;
+            .swiper-scrollbar-drag {
+              height: 5px !important;
+              width: 87px !important;
+            }
+            .catalogItem {
+              display: none;
+            }
+            .secondSwiper {
+              display: block;
+              .swiper-horizontal > .swiper-scrollbar,
+              .swiper-scrollbar.swiper-scrollbar-horizontal {
+                opacity: 1 !important;
+                margin-bottom: 1%;
+              }
+              h2 {
+                text-align: center;
+                color: #004f3d;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: bold;
+                line-height: normal;
+                text-align: center;
+              }
+              .secondSwiperItems {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 5%;
+                p {
+                  color: #000;
+                  font-size: 15px;
+                  font-style: normal;
+                  font-weight: bold;
+                  line-height: normal;
+                }
+              }
+            }
+          }
+        }
+        .specialCard {
+          display: none;
+        }
+        .specialSecond {
+          display: flex;
+          flex-direction: column;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 4%;
+          width: 100%;
+          .specialInfo {
+            width: 50%;
+            background-color: #f04923;
+            height: 100%;
+            border-radius: 20px 20px 0 0;
+            .timer {
+              .countTimer {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .daysHours {
+                  margin-bottom: 6%;
+                  .hoursPoint {
+                    display: none;
+                  }
+                }
+                .minutesSeconds {
+                  gap: 12%;
+                  .point {
+                    margin-left: 24%;
+                  }
+                }
+              }
+            }
+            h2 {
+              color: #fff;
+              text-align: center;
+              font-size: 30px;
+              font-style: normal;
+              font-weight: bold;
+              line-height: normal;
+              padding: 2%;
+            }
+            p {
+              color: #fff;
+              text-align: center;
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 20px; /* 166.667% */
+              padding: 2%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .catalogMain {
+    width: 100%;
+    .contanier {
+      .row {
+        .catalogPreview {
+          h2 {
+            color: #004f3d;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: bold;
+            line-height: normal;
+            text-align: center;
+          }
+          .catalogCards {
+            .firstCards {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              .bestCard {
+                width: 50%;
+                margin-bottom: 5%;
+              }
+            }
+            .secondCards {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              .bestCard {
+                width: 50%;
+                margin-bottom: 5%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .catalogMain {
+    width: 100%;
+    .contanier {
+      .row {
+        .catalogPreview {
+          .catalogScrool {
+            width: 100%;
+            .secondSwiper{
+              .secondSwiperItems{
+                margin-bottom: 0;
+                margin-top: 5%;
+              }
+            }
+            h2 {
+              color: #004f3d;
+              font-size: 20px;
+              font-style: normal;
+              font-weight: bold;
+              line-height: normal;
+              text-align: center;
+            }
+            p {
+              color: #000;
+              font-size: 15px;
+              font-style: normal;
+              font-weight: bold;
+              line-height: normal;
+              text-align: center;
+            }
+          }
+          .catalogCards {
+            .firstCards {
+              .bestCard {
+                width: 70%;
+              }
+            }
+            .secondCards {
+              .bestCard {
+                width: 70%;
+              }
+            }
+          }
+        }
+        .specialSecond {
+          .timer {
+            .countTimer {
+              .daysHours {
+                span {
+                  color: #ffefd2;
+                  font-size: 20px;
+                  font-style: normal;
+                  font-weight: bold;
+                  line-height: normal;
+                }
+              }
+              .minutesSeconds {
+                span {
+                  color: #ffefd2;
+                  font-size: 20px;
+                  font-style: normal;
+                  font-weight: bold;
+                  line-height: normal;
+                }
+              }
+            }
+          }
+          .specialInfo {
+            width: 77%;
+          }
+          .specialImg {
+            width: 86%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 7%;
+            img {
+              width: 91%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width:450px) {
+  .catalogMain{
+    width: 100%;
+    .contanier{
+      .row{
+        .catalogPreview{
+          .catalogCards{
+            .firstCards{
+              .bestCard{
+                width: 90%;
+              }
+            }
+            .secondCards{
+              .bestCard{
+                width: 90%;
+              }
+            }
+          }
+          
+          .catalogScrool{
+            .swiper-scrollbar-drag{
+              width: 50px !important;
+              margin-bottom: 0 !important;
+            }
+            .secondSwiper{
+              .secondSwiperItems{
+                h2{
+                  color: #004f3d;
+                  font-size: 18px;
+                  font-style: normal;
+                  font-weight: bold;
+                  line-height: normal;
+                  text-align: center;
+                }
+                p{
+                  color: #000;
+                  font-size: 15px;
+                  font-style: normal;
+                  font-weight: bold;
+                  line-height: normal;
+                  text-align: center;
+                }
+
+              }
+            }
+          
+          }
+        }
+        .specialSecond{
+          .specialInfo{
+            width: 100%;
+          }
+          .specialImg{
+            width: 100%;
+            img{
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

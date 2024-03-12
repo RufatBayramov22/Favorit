@@ -1,0 +1,2608 @@
+.specialOffer {
+  .contanier {
+    .row {
+      .special {
+        width: 100%;
+        margin-top: 7%;
+        .swiper-horizontal > .swiper-pagination-bullets,
+        .swiper-pagination-bullets.swiper-pagination-horizonta {
+          position: relative;
+          bottom: 0;
+          margin-top: 2%;
+        }
+        .swiper-horizontal
+          > .swiper-pagination-bullets
+          .swiper-pagination-bullet,
+        .swiper-pagination-horizontal.swiper-pagination-bullets
+          .swiper-pagination-bullet {
+          background-color: #004f3d;
+          width: 12px;
+          height: 12px;
+        }
+        .swiper-wrapper{
+          transition-duration: 500ms !important;
+          transition-delay: 5ms !important;
+        }
+        .swiper-button-next {
+          color: #004f3d;
+        }
+        .swiper-button-prev.swiper-button-disabled {
+          color: #004f3d;
+        }
+        .swiper-button-prev:after {
+          color: #004f3d;
+        }
+        .swiper-button-next:after {
+          color: #004f3d;
+        }
+        .specialCard {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 60px 60px 60px 60px;
+          background: #f04923;
+
+          .specialInfo {
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: 4%;
+            height: 55vh;
+            h2 {
+              color: #fff;
+              font-size: 60px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 80px; /* 133.333% */
+              margin-bottom: 20%;
+              margin-left: 9%;
+            }
+            p {
+              color: #fff;
+              font-size: 15px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 20px; /* 133.333% */
+              width: 265px;
+            }
+          }
+          .specialImg {
+            width: 75%;
+            margin-bottom: -6px;
+            img {
+              border-radius: 60px;
+              width: 100%;
+              height: 55vh;
+            }
+            .second {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//best seller
+.bestSeller {
+  width: 100%;
+  margin-top: 5%;
+  .contanier {
+    .row {
+      flex-direction: column;
+      .bestcard{
+        display: none;
+      }
+      .bestTitle {
+        display: flex;
+        width: 22%;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2%;
+        position: absolute;
+        z-index: 999;
+        margin-top: 3%;
+        h2 {
+          color: #f04923;
+          font-size: 50px;
+          font-style: normal;
+          font-weight: bold;
+          line-height: normal;
+          margin-top: 2%;
+        }
+    }
+        
+      }
+      .bestSellerCard {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        .swiper-horizontal > .swiper-pagination-bullets,
+        .swiper-pagination-bullets.swiper-pagination-horizontal {
+          display: none;
+        }
+        .swiper-button-next {
+          border: 2px solid;
+          padding: 2%;
+          border-radius: 15px;
+          background: transparent;
+          color: #004f3d;
+          top:17%;
+          &::after{
+            font-weight: bold;
+            font-size: 31px;
+          }
+          &:hover {
+            background: #f04923;
+            transition: 0.4s all ease-in-out;
+          }
+        }
+        .swiper-button-prev {
+          border: 2px solid;
+          padding: 2%;
+          border-radius: 15px;
+          background: transparent;
+          color: #004f3d;
+          top: 17%;
+          left: 90%;
+          &::after{
+            font-weight: bold;
+            font-size: 31px;
+          }
+          &:hover {
+            background: #f04923;
+            transition: 0.4s all ease-in-out;
+          }
+        }
+        .bestCard {
+          width: 98%;
+          border-radius: 10px;
+          border: 2px solid #f04923;
+          margin-top: 60%;
+          .best {
+            width: 100%;
+          }
+          .bestInfo {
+            width: 98%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 4%;
+            span {
+              color: #9c9c9c;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+            }
+          }
+          .bestDesc {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 4%;
+            h2 {
+              color: #000;
+              font-size: 27px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+            }
+            p {
+              color: #000;
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 20px; /* 166.667% */
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+//category
+.category {
+  width: 100%;
+  margin-top: 5%;
+  .contanier {
+    .row {
+      flex-direction: column;
+      .categoryTitle {
+        position: absolute;
+    width: 27%;
+    z-index: 999;
+    margin-top: 1%;
+        h2 {
+          color: #f04923;
+          font-size: 50px;
+          font-style: normal;
+          font-weight: bold;
+          line-height: normal;
+        }
+      }
+      .categResp{
+        display: none;
+      }
+      .categories {
+        display: flex;
+        gap: 10%;
+        margin-top: 2%;
+        .swiper-horizontal > .swiper-pagination-bullets,
+        .swiper-pagination-bullets.swiper-pagination-horizontal {
+          display: none;
+        }
+        .swiper-button-prev {
+          border: 2px solid;
+          padding: 2%;
+          border-radius: 15px;
+          background: transparent;
+          color: #004f3d;
+          left: var(--swiper-navigation-sides-offset, 88%);
+          right: auto;
+          top: 26%;
+          &:hover {
+            background: #f04923;
+            transition: 0.4s all ease-in-out;
+          }
+          &::after{
+            font-weight: bold;
+            font-size: 31px;
+          }
+        }
+        .swiper-button-next {
+          border: 2px solid;
+          padding: 2%;
+          border-radius: 15px;
+          background: transparent;
+          right: var(--swiper-navigation-sides-offset, 32px);
+          top: 26%;
+          color: #004f3d;
+          &:hover {
+            background: #f04923;
+            transition: 0.4s all ease-in-out;
+          }
+          &::after{
+            font-weight: bold;
+            font-size: 31px;
+          }
+        }
+        .swiper-button-next {
+          right: var(--swiper-navigation-sides-offset, 34px);
+        }
+        .card {
+          width: 90%;
+          height: 21vh;
+          border-radius: 15px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          border-radius: 15px;
+          border: 2px solid #f04923;
+          justify-content: center;
+          padding: 10px;
+          margin-top: 55%;
+          h4 {
+            margin-top: 5%;
+          }
+        }
+        .fruit {
+          h4 {
+            text-align: center;
+            width: 36%;
+          }
+        }
+        .candy {
+          h4 {
+            text-align: center;
+            width: 38%;
+          }
+        }
+      }
+    }
+  }
+}
+
+//deliciosPrice
+
+.deliciosPrice {
+  width: 100%;
+  margin-top: 5%;
+  .contanier {
+    .row {
+      flex-direction: column;
+      .deliciosTitle {
+        display: flex;
+        width: 22%;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2%;
+        position: absolute;
+        z-index: 999;
+    }
+        
+        h2 {
+          color: #f04923;
+          font-size: 50px;
+          font-style: normal;
+          font-weight: bold;
+          line-height: normal;
+          margin-top: 10px;
+        }
+      }
+      .bestcard{
+        display: none;
+      }
+      .deliciosCard {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        .swiper-horizontal > .swiper-pagination-bullets,
+        .swiper-pagination-bullets.swiper-pagination-horizontal {
+          display: none;
+        }
+        .swiper-button-next {
+          border: 2px solid;
+          padding: 2%;
+          border-radius: 15px;
+          background: transparent;
+          color: #004f3d;
+          top:17%;
+
+          &:hover {
+            background: #f04923;
+            transition: 0.4s all ease-in-out;
+          }
+          &::after{
+            font-size: 31px;
+            font-weight: bold;
+          }
+        }
+        .swiper-button-prev {
+          border: 2px solid;
+          padding: 2%;
+          border-radius: 15px;
+          background: transparent;
+          color: #004f3d;
+          top: 17%;
+          left: 90%;
+          &:hover {
+            background: #f04923;
+            transition: 0.4s all ease-in-out;
+          }
+          &::after{
+            font-weight: bold;
+            font-size: 31px;
+          }
+        }
+        .priceCard {
+          width: 98%;
+          border-radius: 10px;
+          border: 2px solid #f04923;
+          margin-top: 60%;
+          .best {
+            width: 100%;
+          }
+          .priceInfo {
+            width: 98%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 4%;
+            span {
+              color: #9c9c9c;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+            }
+          }
+          .priceDesc {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 4%;
+            h2 {
+              color: #000;
+              font-size: 27px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+            }
+            p {
+              color: #000;
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 20px; /* 166.667% */
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+
+.ideaInspring {
+  width: 100%;
+  margin-top: 5%;
+  .contanier {
+    .row {
+      flex-direction: column;
+      h2 {
+        color: #f04923;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: normal;
+        margin-bottom: 3%;
+        margin-left: -1%;
+        width: 24%;
+      }
+      .ideaFirst {
+        display: flex;
+        gap: 5%;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        .ideaCard {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          h3 {
+            color: #f04923;
+            font-size: 35px;
+            font-style: normal;
+            font-weight: bold;
+            line-height: normal;
+            margin-top: 3%;
+          }
+          p {
+            color: #004f3d;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+      }
+      .ideaSecond {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 96px;
+        margin-top: 4%;
+        width: 100%;
+        .ideaCard {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          h3 {
+            color: #f04923;
+            font-size: 35px;
+            font-style: normal;
+            font-weight: bold;
+            line-height: normal;
+            margin-top: 5%;
+          }
+          p {
+            color: #004f3d;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+      }
+    }
+  }
+}
+//contact
+.contact {
+  width: 100%;
+  margin-top: 5%;
+  .contanier {
+    .row {
+      flex-direction: column;
+      h2 {
+        color: #f04923;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: normal;
+      }
+      .contactInfo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 5%;
+        .leftContact {
+          iframe {
+            border-radius: 15px;
+          }
+        }
+        .rightContact {
+          display: flex;
+          flex-direction: column;
+         
+          p {
+            color: #004f3d;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: bold;
+            line-height: normal;
+            display: flex;
+            margin-bottom: 3%;
+            text-align: center;
+          }
+          a {
+            color: #004f3d;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: bold;
+            line-height: normal;
+            display: flex;
+            margin-bottom: 3%;
+            text-align: center;
+          }
+          form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+            input {
+              border-radius: 15px;
+              border: 2px solid #f04923;
+              outline: none;
+              background: transparent;
+              padding: 3%;
+              width: 100%;
+            }
+            button {
+              width: 20%;
+              border-radius: 15px;
+              background: #004f3d;
+              color: #fff;
+              outline: none;
+              border: none;
+              padding: 2%;
+              &:hover{
+                background: transparent;
+                border: 2px solid #004f3d;
+                color: #f04923;
+                transition: 0.5s all ease-in-out;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1056px) {
+  .specialOffer {
+    .contanier {
+      .row {
+        .special {
+          width: 100%;
+          .swiper-slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .swiper-button-next {
+            display: none;
+          }
+          .swiper-button-prev {
+            display: none;
+          }
+          .specialCard {
+            width: 64%;
+            flex-direction: column;
+            background-color: transparent;
+            .specialInfo {
+              border-radius: 60px 60px 0px 0px;
+              background: #f04923;
+              width: 85%;
+              margin-left: 0;
+              h2 {
+                margin-bottom: 0;
+                color: #fff;
+                text-align: center;
+                font-size: 50px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                margin-left: 0;
+              }
+              p {
+                color: #fff;
+                text-align: center;
+                font-size: 17px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px; 
+              }
+            }
+            .specialImg {
+              background-color: #f04923;
+              width: 85%;
+              border-radius: 0 0 60px 60px;
+              img {
+                display: none;
+                margin-top: 2%;
+              }
+              .second {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  //bestSeller
+  .bestSeller {
+    width: 100%;
+    .contanier {
+      .row {
+        
+        .bestTitle {
+          margin-bottom: 0;
+          position: relative;
+          z-index: 0;
+          margin-top: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          h2 {
+            font-size: 40px;
+            margin-bottom: 5%;
+          }
+        }
+        .bestcard{
+          display: flex;
+          width: 100%;
+          .swiper{
+            position: relative;
+          }
+          .swiper-wrapper{
+            height: 70vh;
+          }
+          .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+            bottom: var(--swiper-pagination-bottom, -2px);
+          }
+          .swiper-horizontal
+          > .swiper-pagination-bullets
+          .swiper-pagination-bullet,
+        .swiper-pagination-horizontal.swiper-pagination-bullets
+          .swiper-pagination-bullet {
+          background-color: #004f3d;
+        }
+          .swiper-backface-hidden .swiper-slide{
+           display: flex;
+           align-items: center;
+           justify-content: center;
+          }
+          .bestCard {
+            width: 44%;
+            border-radius: 10px;
+            border: 2px solid #f04923;
+            
+            .best {
+              width: 100%;
+            }
+            .bestInfo {
+              width: 98%;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              padding: 4%;
+              span {
+                color: #9c9c9c;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+              }
+            }
+            .bestDesc {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              padding: 4%;
+              h2 {
+                color: #000;
+                font-size: 27px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+              }
+              p {
+                color: #000;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px; /* 166.667% */
+              }
+            }
+          }
+        }
+        .bestSellerCard {
+          width: 100%;
+          display: none;
+          .bestCard{
+            margin-top: 0
+          }
+          .swiper-backface-hidden .swiper-slide {
+            width: 32% !important;
+          }
+          .swiper-button-next {
+            display: none;
+          }
+          .swiper-button-prev {
+            display: none;
+          }
+          .swiper-horizontal > .swiper-pagination-bullets,
+          .swiper-pagination-bullets.swiper-pagination-horizontal {
+            display: block;
+            position: relative;
+            bottom: -3px;
+          }
+          .swiper-horizontal
+            > .swiper-pagination-bullets
+            .swiper-pagination-bullet,
+          .swiper-pagination-horizontal.swiper-pagination-bullets
+            .swiper-pagination-bullet {
+            background-color: #004f3d;
+          }
+        }
+      }
+    }
+  }
+  //delicios
+  .deliciosPrice {
+    width: 100%;
+    margin-top: 15%;
+    .contanier {
+      .row {
+        .deliciosTitle {
+          position: relative;
+          margin-bottom: 0;
+          z-index: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+
+          h2 {
+            font-size: 40px;
+            margin-top: 0;
+          }
+        }
+        .bestcard{
+          display: flex;
+          width: 100%;
+          .deliciosCard {
+            width: 100%;
+            display: none;
+            .priceCard{
+              margin-top: 0;
+            }
+            .swiper-backface-hidden .swiper-slide {
+              width: 100% ;
+            }
+            .swiper-button-next {
+              display: none;
+            }
+            .swiper-button-prev {
+              display: none;
+            }
+            .swiper-horizontal > .swiper-pagination-bullets,
+            .swiper-pagination-bullets.swiper-pagination-horizontal {
+              display: block;
+              position: relative;
+              bottom: -3px;
+            }
+            .swiper-horizontal
+              > .swiper-pagination-bullets
+              .swiper-pagination-bullet,
+            .swiper-pagination-horizontal.swiper-pagination-bullets
+              .swiper-pagination-bullet {
+              background-color: #004f3d;
+            }
+          }
+          .swiper{
+            position: relative;
+          }
+          .swiper-wrapper{
+            height: 70vh;
+          }
+          .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+            bottom: var(--swiper-pagination-bottom, -2px);
+          }
+          .swiper-horizontal
+          > .swiper-pagination-bullets
+          .swiper-pagination-bullet,
+        .swiper-pagination-horizontal.swiper-pagination-bullets
+          .swiper-pagination-bullet {
+          background-color: #004f3d;
+        }
+          .swiper-backface-hidden .swiper-slide{
+           display: flex;
+           align-items: center;
+           justify-content: center;
+          }
+          .bestCard {
+            width: 44%;
+            border-radius: 10px;
+            border: 2px solid #f04923;
+            
+            .best {
+              width: 100%;
+            }
+            .bestInfo {
+              width: 98%;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              padding: 4%;
+              span {
+                color: #9c9c9c;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+              }
+            }
+            .bestDesc {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              padding: 4%;
+              h2 {
+                color: #000;
+                font-size: 27px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+              }
+              p {
+                color: #000;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px; /* 166.667% */
+              }
+            }
+          }
+        }
+        .deliciosCard {
+          width: 100%;
+          display: none;
+          .priceCard{
+            margin-top: 0;
+          }
+          .swiper-backface-hidden .swiper-slide {
+            width: 32% !important;
+          }
+          .swiper-button-next {
+            display: none;
+          }
+          .swiper-button-prev {
+            display: none;
+          }
+          .swiper-horizontal > .swiper-pagination-bullets,
+          .swiper-pagination-bullets.swiper-pagination-horizontal {
+            display: block;
+            position: relative;
+            bottom: -5px;
+          }
+          .swiper-horizontal
+            > .swiper-pagination-bullets
+            .swiper-pagination-bullet,
+          .swiper-pagination-horizontal.swiper-pagination-bullets
+            .swiper-pagination-bullet {
+            background-color: #004f3d;
+          }
+        }
+      }
+    }
+  }
+
+  .category {
+    width: 100%;
+    margin-top: 15%;
+    .contanier {
+      .row {
+        .categoryTitle {
+          position: relative;
+          z-index: 0;
+          margin-top: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          h2 {
+            font-size: 40px;
+          }
+        }
+        .categories {
+          width: 100%;
+          display: none;
+        }
+          .categResp{
+            display: flex;
+            display: flex;
+            gap: 10%;
+            margin-top: 2%;
+            .swiper-horizontal > .swiper-pagination-bullets,
+            .swiper-pagination-bullets.swiper-pagination-horizontal {
+              display: none;
+            }
+            .swiper-backface-hidden .swiper-slide{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+             }
+             .swiper-wrapper{
+              height: 30vh;
+             }
+            .swiper-button-prev {
+              border: 2px solid;
+              padding: 2%;
+              border-radius: 15px;
+              background: transparent;
+              color: #004f3d;
+              left: var(--swiper-navigation-sides-offset, 88%);
+              right: auto;
+              top: 26%;
+              &:hover {
+                background: #f04923;
+                transition: 0.4s all ease-in-out;
+              }
+            }
+            .swiper-button-next {
+              border: 2px solid;
+              padding: 2%;
+              border-radius: 15px;
+              background: transparent;
+              right: var(--swiper-navigation-sides-offset, 32px);
+              top: 26%;
+              color: #004f3d;
+              &:hover {
+                background: #f04923;
+                transition: 0.4s all ease-in-out;
+              }
+            }
+            .swiper-button-next {
+              right: var(--swiper-navigation-sides-offset, 34px);
+            }
+            .card {
+              width: 90%;
+              height: 21vh;
+              border-radius: 15px;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              border-radius: 15px;
+              border: 2px solid #f04923;
+              justify-content: center;
+              padding: 10px;
+              margin-top: 55%;
+              h4 {
+                margin-top: 5%;
+              }
+            }
+            .fruit {
+              h4 {
+                text-align: center;
+                width: 36%;
+              }
+            }
+            .candy {
+              h4 {
+                text-align: center;
+                width: 38%;
+              }
+            }
+          .card {
+            width: 36%;
+            height: 25vh;
+            margin-top: 0;
+          }
+          .swiper-backface-hidden .swiper-slide {
+            width: 100%;
+            height: 28vh;
+          }
+          .swiper-button-next {
+            display: none;
+          }
+          .swiper-button-prev {
+            display: none;
+          }
+          .category
+            .contanier
+            .row
+            .categories
+            .swiper-backface-hidden
+            .swiper-slide {
+            height: 28vh;
+          }
+          .swiper-horizontal > .swiper-pagination-bullets,
+          .swiper-pagination-bullets.swiper-pagination-horizontal {
+            display: block;
+            position: absolute;
+            bottom: -3px;
+          }
+          .swiper-horizontal
+            > .swiper-pagination-bullets
+            .swiper-pagination-bullet,
+          .swiper-pagination-horizontal.swiper-pagination-bullets
+            .swiper-pagination-bullet {
+            background-color: #004f3d;
+          }
+        }
+      }
+    
+  }
+  }
+  .ideaInspring {
+    .contanier {
+      .row {
+        flex-direction: column;
+        align-items: center;
+        h2 {
+          font-size: 40px;
+          margin-bottom: 5%;
+        }
+        .ideaFirst {
+          flex-direction: column;
+        }
+        .ideaSecond {
+          flex-direction: column;
+          gap: 50px;
+        }
+      }
+    }
+  }
+  .contact {
+    .contanier {
+      .row {
+        flex-direction: column;
+        align-items: center;
+        h2 {
+          font-size: 40px;
+        }
+        .contactInfo {
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .deliciosPrice {
+    width: 100%;
+    margin-top: 15%;
+    .contanier {
+      .row {
+        .deliciosTitle {
+          position: relative;
+          margin-bottom: 0;
+          z-index: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+
+          h2 {
+            font-size: 40px;
+            margin-top: 0;
+          }
+        }
+        .bestcard{
+          display: flex;
+          width: 100%;
+          .deliciosCard {
+            width: 100%;
+            display: none;
+            .priceCard{
+              margin-top: 0;
+            }
+           
+            .swiper-backface-hidden .swiper-slide {
+              width: 100% ;
+            }
+            .swiper-button-next {
+              display: none;
+            }
+            .swiper-button-prev {
+              display: none;
+            }
+            .swiper-horizontal > .swiper-pagination-bullets,
+            .swiper-pagination-bullets.swiper-pagination-horizontal {
+              display: block;
+              position: relative;
+              bottom: -3px;
+            }
+            .swiper-horizontal
+              > .swiper-pagination-bullets
+              .swiper-pagination-bullet,
+            .swiper-pagination-horizontal.swiper-pagination-bullets
+              .swiper-pagination-bullet {
+              background-color: #004f3d;
+            }
+          }
+          .swiper{
+            position: relative;
+          }
+          .swiper-wrapper{
+            height: 70vh;
+          }
+      
+          .deliciosPrice .contanier .row .bestcard .swiper-horizontal > .swiper-pagination-bullets, .deliciosPrice .contanier .row .bestcard .swiper-pagination-bullets.swiper-pagination-horizontal{
+            bottom: var(--swiper-pagination-bottom, -4px) !important;
+
+          }
+          .swiper-horizontal
+          > .swiper-pagination-bullets
+          .swiper-pagination-bullet,
+        .swiper-pagination-horizontal.swiper-pagination-bullets
+          .swiper-pagination-bullet {
+          background-color: #004f3d;
+        }
+          .swiper-backface-hidden .swiper-slide{
+           display: flex;
+           align-items: center;
+           justify-content: center;
+          }
+          .bestCard {
+            width: 65%;
+            border-radius: 10px;
+            border: 2px solid #f04923;
+            
+            .best {
+              width: 100%;
+            }
+            .bestInfo {
+              width: 98%;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              padding: 4%;
+              span {
+                color: #9c9c9c;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+              }
+            }
+            .bestDesc {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              padding: 4%;
+              h2 {
+                color: #000;
+                font-size: 27px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+              }
+              p {
+                color: #000;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px; 
+              }
+            }
+          }
+        }
+        .deliciosCard {
+          width: 100%;
+          display: none;
+          .priceCard{
+            margin-top: 0;
+          }
+          .swiper-backface-hidden .swiper-slide {
+            width: 32% !important;
+          }
+          .swiper-button-next {
+            display: none;
+          }
+          .swiper-button-prev {
+            display: none;
+          }
+          .swiper-horizontal > .swiper-pagination-bullets,
+          .swiper-pagination-bullets.swiper-pagination-horizontal {
+            display: block;
+            position: relative;
+            bottom: -3px;
+          }
+          .swiper-horizontal
+            > .swiper-pagination-bullets
+            .swiper-pagination-bullet,
+          .swiper-pagination-horizontal.swiper-pagination-bullets
+            .swiper-pagination-bullet {
+            background-color: #004f3d;
+          }
+        }
+      }
+    }
+  }
+  .bestSeller {
+    width: 100%;
+    .contanier {
+      .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .bestTitle {
+          h2 {
+            font-size: 40px;
+          }
+        }
+        .bestcard{
+          display: flex;
+          width: 100%;
+          .swiper{
+            position: relative;
+          }
+          .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+            bottom: var(--swiper-pagination-bottom, 66px);
+          }
+          .swiper-horizontal
+          > .swiper-pagination-bullets
+          .swiper-pagination-bullet,
+        .swiper-pagination-horizontal.swiper-pagination-bullets
+          .swiper-pagination-bullet {
+          background-color: #004f3d;
+        }
+          .swiper-backface-hidden .swiper-slide{
+           display: flex;
+           align-items: center;
+           justify-content: center;
+          }
+          .bestCard {
+            width: 44%;
+            border-radius: 10px;
+            border: 2px solid #f04923;
+            
+            .best {
+              width: 100%;
+            }
+            .bestInfo {
+              width: 98%;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              padding: 4%;
+              span {
+                color: #9c9c9c;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+              }
+            }
+            .bestDesc {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              padding: 4%;
+              h2 {
+                color: #000;
+                font-size: 27px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+              }
+              p {
+                color: #000;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px; /* 166.667% */
+              }
+            }
+          }
+        .bestSellerCard {
+          width: 100%;
+          .bestCard {
+            .bestInfo {
+              span {
+                font-size: 13px;
+              }
+              img {
+                width: 50%;
+              }
+            }
+          }
+          .swiper-backface-hidden .swiper-slide {
+            width: 30% !important;
+          }
+          .swiper-button-next {
+            display: none;
+          }
+          .swiper-button-prev {
+            display: none;
+          }
+          .swiper-horizontal > .swiper-pagination-bullets,
+          .swiper-pagination-bullets.swiper-pagination-horizontal {
+            display: block;
+            position: relative;
+            bottom: -3px;
+          }
+          .swiper-horizontal
+            > .swiper-pagination-bullets
+            .swiper-pagination-bullet,
+          .swiper-pagination-horizontal.swiper-pagination-bullets
+            .swiper-pagination-bullet {
+            background-color: #004f3d;
+          }
+        }
+      }
+    }
+  }
+  //delicios
+  .deliciosPrice {
+    width: 100%;
+    .contanier {
+      .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .deliciosTitle {
+          h2 {
+            font-size: 40px;
+          }
+        }
+        .deliciosCard {
+          width: 100%;
+          .priceCard {
+            .priceInfo {
+              span {
+                font-size: 13px;
+              }
+              img {
+                width: 50%;
+              }
+            }
+          }
+          .swiper-backface-hidden .swiper-slide {
+            width: 30% !important;
+          }
+          .swiper-button-next {
+            display: none;
+          }
+          .swiper-button-prev {
+            display: none;
+          }
+          .swiper-horizontal > .swiper-pagination-bullets,
+          .swiper-pagination-bullets.swiper-pagination-horizontal {
+            display: block;
+            position: relative;
+            bottom: -3px;
+          }
+          .swiper-horizontal
+            > .swiper-pagination-bullets
+            .swiper-pagination-bullet,
+          .swiper-pagination-horizontal.swiper-pagination-bullets
+            .swiper-pagination-bullet {
+            background-color: #004f3d;
+          }
+        }
+      }
+    }
+  }
+  .ideaInspring {
+    .contanier {
+      .row {
+        flex-direction: column;
+        align-items: center;
+        h2 {
+          font-size: 40px;
+          margin-bottom: 5%;
+          width: 40%;
+          text-align: center;
+        }
+        .ideaFirst {
+          flex-direction: column;
+          .street {
+            img {
+              width: 70%;
+            }
+          }
+        }
+        .ideaSecond {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+  .category {
+    width: 100%;
+    .contanier {
+      .row {
+        .categoryTitle {
+          h2 {
+            font-size: 40px;
+            width: 44% !important;
+          }
+        }
+        .categories {
+          width: 100%;
+          .card {
+            width: 100%;
+            height: 30vh;
+            h4 {
+              color: #004f3d;
+              font-size: 20px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+            }
+          }
+          .swiper-backface-hidden .swiper-slide {
+            width: 30% !important;
+            height: 39vh !important;
+          }
+          .swiper-button-next {
+            display: none;
+          }
+          .swiper-button-prev {
+            display: none;
+          }
+          .swiper-horizontal > .swiper-pagination-bullets,
+          .swiper-pagination-bullets.swiper-pagination-horizontal {
+            display: block;
+            position: absolute;
+            bottom: -3px;
+          }
+          .swiper-horizontal
+            > .swiper-pagination-bullets
+            .swiper-pagination-bullet,
+          .swiper-pagination-horizontal.swiper-pagination-bullets
+            .swiper-pagination-bullet {
+            background-color: #004f3d;
+          }
+        }
+      }
+    }
+  }
+  .contact {
+    .contanier {
+      .row {
+        flex-direction: column;
+        align-items: center;
+        h2 {
+          font-size: 40px;
+        }
+        .contactInfo {
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          .leftContact {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .specialOffer {
+    .contanier {
+      .row {
+        .special {
+          .specialCard {
+            .specialInfo {
+              width: 100%;
+            }
+            .specialImg {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .deliciosPrice {
+    width: 100%;
+    margin-top: 15%;
+    .contanier {
+      .row {
+        .deliciosTitle {
+          position: relative;
+          margin-bottom: 0;
+          z-index: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+
+          h2 {
+            font-size: 40px;
+            margin-top: 0;
+          }
+        }
+        .bestcard{
+          display: flex;
+          width: 100%;
+          .deliciosCard {
+            width: 100%;
+            display: none;
+            .priceCard{
+              margin-top: 0;
+            }
+            .swiper-backface-hidden .swiper-slide {
+              width: 100% ;
+            }
+            .swiper-button-next {
+              display: none;
+            }
+            .swiper-button-prev {
+              display: none;
+            }
+            .swiper-horizontal > .swiper-pagination-bullets,
+            .swiper-pagination-bullets.swiper-pagination-horizontal {
+              display: block;
+              position: relative;
+              bottom: -3px;
+            }
+            .swiper-horizontal
+              > .swiper-pagination-bullets
+              .swiper-pagination-bullet,
+            .swiper-pagination-horizontal.swiper-pagination-bullets
+              .swiper-pagination-bullet {
+              background-color: #004f3d;
+            }
+          }
+          .swiper{
+            position: relative;
+          }
+          .swiper-wrapper{
+            height: 70vh;
+          }
+          .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+            bottom: var(--swiper-pagination-bottom, -2px);
+          }
+          .swiper-horizontal
+          > .swiper-pagination-bullets
+          .swiper-pagination-bullet,
+        .swiper-pagination-horizontal.swiper-pagination-bullets
+          .swiper-pagination-bullet {
+          background-color: #004f3d;
+        }
+          .swiper-backface-hidden .swiper-slide{
+           display: flex;
+           align-items: center;
+           justify-content: center;
+          }
+          .bestCard {
+            width: 65%;
+            border-radius: 10px;
+            border: 2px solid #f04923;
+            
+            .best {
+              width: 100%;
+            }
+            .bestInfo {
+              width: 98%;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              padding: 4%;
+              span {
+                color: #9c9c9c;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+              }
+            }
+            .bestDesc {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              padding: 4%;
+              h2 {
+                color: #000;
+                font-size: 27px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+              }
+              p {
+                color: #000;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px; /* 166.667% */
+              }
+            }
+          }
+        }
+        .deliciosCard {
+          width: 100%;
+          display: none;
+          .priceCard{
+            margin-top: 0;
+          }
+          .swiper-backface-hidden .swiper-slide {
+            width: 100% !important;
+          }
+          .swiper-button-next {
+            display: none;
+          }
+          .swiper-button-prev {
+            display: none;
+          }
+          .swiper-horizontal > .swiper-pagination-bullets,
+          .swiper-pagination-bullets.swiper-pagination-horizontal {
+            display: block;
+            position: relative;
+            bottom: -3px;
+          }
+          .swiper-horizontal
+            > .swiper-pagination-bullets
+            .swiper-pagination-bullet,
+          .swiper-pagination-horizontal.swiper-pagination-bullets
+            .swiper-pagination-bullet {
+            background-color: #004f3d;
+          }
+        }
+      }
+    }
+  }
+  .specialOffer {
+    .contanier {
+      .row {
+        .special {
+          width: 100%;
+          .swiper-button-next {
+            display: none;
+          }
+          .swiper-button-prev {
+            display: none;
+          }
+          .specialCard {
+            width: 100%;
+            flex-direction: column;
+            background-color: transparent;
+            .specialInfo {
+              border-radius: 60px 60px 0px 0px;
+              background: #f04923;
+              width: 70%;
+              margin-left: 0;
+              h2 {
+                margin-bottom: 0;
+                color: #fff;
+                text-align: center;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                margin-left: 0;
+              }
+              p {
+                color: #fff;
+                text-align: center;
+                font-size: 17px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px; /* 166.667% */
+              }
+            }
+            .specialImg {
+              background-color: #f04923;
+              width: 70%;
+              border-radius: 0 0 60px 60px;
+              img {
+                height: 100%;
+                margin-top: 2%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .bestSeller {
+    width: 100%;
+    margin-top: 10%;
+    .contanier {
+      .row {
+        .bestTitle {
+          h2 {
+            font-size: 30px;
+          }
+        }
+        .bestcard{
+          display: flex;
+          width: 100%;
+          .swiper{
+            position: relative;
+          }
+      
+          .swiper-horizontal
+          > .swiper-pagination-bullets
+          .swiper-pagination-bullet,
+        .swiper-pagination-horizontal.swiper-pagination-bullets
+          .swiper-pagination-bullet {
+          background-color: #004f3d;
+        }
+          .swiper-backface-hidden .swiper-slide{
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           width: 100%;
+          }
+          .bestCard {
+            width: 70%;
+            border-radius: 10px;
+            border: 2px solid #f04923;
+            
+            .best {
+              width: 100%;
+            }
+            .bestInfo {
+              width: 98%;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              padding: 4%;
+              span {
+                color: #9c9c9c;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+              }
+            }
+          }
+            .bestDesc {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              padding: 4%;
+              h2 {
+                color: #000;
+                font-size: 27px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+              }
+              p {
+                color: #000;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px; /* 166.667% */
+              }
+            }
+          }
+        .bestSellerCard {
+          width: 100%;
+          .swiper-backface-hidden .swiper-slide {
+            width: 50% !important;
+          }
+          .swiper-button-next {
+            display: none;
+          }
+          .swiper-button-prev {
+            display: none;
+          }
+          .swiper-horizontal > .swiper-pagination-bullets,
+          .swiper-pagination-bullets.swiper-pagination-horizontal {
+            display: block;
+            position: relative;
+            bottom: -3px;
+          }
+          .swiper-horizontal
+            > .swiper-pagination-bullets
+            .swiper-pagination-bullet,
+          .swiper-pagination-horizontal.swiper-pagination-bullets
+            .swiper-pagination-bullet {
+            background-color: #004f3d;
+          }
+        }
+      }
+    }
+  }
+  //delicios
+  .deliciosPrice {
+    width: 100%;
+    margin-top: 10%;
+    .contanier {
+      .row {
+        .deliciosTitle {
+          h2 {
+            font-size: 30px;
+            width: 44%;
+            text-align: center;
+          }
+        }
+        .deliciosCard {
+          width: 100%;
+          .swiper-backface-hidden .swiper-slide {
+            width: 50% !important;
+          }
+          .swiper-button-next {
+            display: none;
+          }
+          .swiper-button-prev {
+            display: none;
+          }
+          .swiper-horizontal > .swiper-pagination-bullets,
+          .swiper-pagination-bullets.swiper-pagination-horizontal {
+            display: block;
+            position: relative;
+            bottom: -3px;
+          }
+          .swiper-horizontal
+            > .swiper-pagination-bullets
+            .swiper-pagination-bullet,
+          .swiper-pagination-horizontal.swiper-pagination-bullets
+            .swiper-pagination-bullet {
+            background-color: #004f3d;
+          }
+        }
+      }
+    }
+  }
+  .ideaInspring {
+    .contanier {
+      .row {
+        flex-direction: column;
+        align-items: center;
+        h2 {
+          font-size: 30px;
+          margin-bottom: 5%;
+          width: 40%;
+          text-align: center;
+        }
+        .ideaFirst {
+          flex-direction: column;
+          .street {
+            img {
+              width: 80%;
+            }
+          }
+          .kidsDay {
+            img {
+              width: 70%;
+            }
+          }
+        }
+        .ideaSecond {
+          flex-direction: column;
+          .bonus1 {
+            img {
+              width: 70%;
+            }
+          }
+          .backSchool {
+            img {
+              width: 70%;
+            }
+          }
+          .bonus2 {
+            img {
+              width: 70%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .category {
+    width: 100%;
+    .contanier {
+      .row {
+    
+        .categoryTitle {
+          h2 {
+            font-size: 30px;
+            width: 44%;
+            text-align: center;
+          }
+        }
+        .categories {
+          width: 100%;
+          .card {
+            height: 30vh;
+            h4 {
+              color: #004f3d;
+              font-size: 20px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+            }
+          }
+          .swiper-backface-hidden .swiper-slide {
+            width: 40% !important;
+            height: 30vh !important;
+          }
+          .swiper-button-next {
+            display: none;
+          }
+          .swiper-button-prev {
+            display: none;
+          }
+          .swiper-horizontal > .swiper-pagination-bullets,
+          .swiper-pagination-bullets.swiper-pagination-horizontal {
+            display: block;
+            position: absolute;
+            bottom: -3px;
+          }
+          .swiper-horizontal
+            > .swiper-pagination-bullets
+            .swiper-pagination-bullet,
+          .swiper-pagination-horizontal.swiper-pagination-bullets
+            .swiper-pagination-bullet {
+            background-color: #004f3d;
+          }
+        }
+      }
+    }
+  }
+  .contact {
+    margin-top: 26%;
+    .contanier {
+      .row {
+        .contactInfo {
+          .leftContact {
+            iframe {
+              width: 100%;
+            }
+          }
+          .rightContact {
+            margin-top: 10%;
+            p {
+              color: #004f3d;
+              font-size: 19px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            a {
+              color: #004f3d;
+              font-size: 19px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .deliciosPrice {
+    width: 100%;
+    margin-top: 15%;
+    .contanier {
+      .row {
+        .deliciosTitle {
+          position: relative;
+          margin-bottom: 0;
+          z-index: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+
+          h2 {
+            font-size: 40px;
+            margin-top: 0;
+          }
+        }
+        .bestcard{
+          display: flex;
+          width: 100%;
+          .deliciosCard {
+            width: 100%;
+            display: none;
+            .priceCard{
+              margin-top: 0;
+            }
+            .swiper-backface-hidden .swiper-slide {
+              width: 100% ;
+            }
+            .swiper-button-next {
+              display: none;
+            }
+            .swiper-button-prev {
+              display: none;
+            }
+            .swiper-horizontal > .swiper-pagination-bullets,
+            .swiper-pagination-bullets.swiper-pagination-horizontal {
+              display: block;
+              position: relative;
+              bottom: 0%;
+            }
+            .swiper-horizontal
+              > .swiper-pagination-bullets
+              .swiper-pagination-bullet,
+            .swiper-pagination-horizontal.swiper-pagination-bullets
+              .swiper-pagination-bullet {
+              background-color: #004f3d;
+            }
+          }
+          .swiper{
+            position: relative;
+          }
+          .swiper-wrapper{
+            height: 54vh;
+          }
+          .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+            bottom: 0%;
+          }
+          .swiper-horizontal
+          > .swiper-pagination-bullets
+          .swiper-pagination-bullet,
+        .swiper-pagination-horizontal.swiper-pagination-bullets
+          .swiper-pagination-bullet {
+          background-color: #004f3d;
+        }
+          .swiper-backface-hidden .swiper-slide{
+           display: flex;
+           align-items: center;
+           justify-content: center;
+          }
+          .bestCard {
+            width:66%;
+            border-radius: 10px;
+            border: 2px solid #f04923;
+            
+            .best {
+              width: 100%;
+            }
+            .bestInfo {
+              width: 98%;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              padding: 4%;
+              span {
+                color: #9c9c9c;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+              }
+            }
+            .bestDesc {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              padding: 4%;
+              h2 {
+                color: #000;
+                font-size: 27px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+              }
+              p {
+                color: #000;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px; /* 166.667% */
+              }
+            }
+          }
+        }
+        .deliciosCard {
+          width: 100%;
+          display: none;
+          .priceCard{
+            margin-top: 0;
+          }
+          .swiper-backface-hidden .swiper-slide {
+            width: 100% ;
+          }
+          .swiper-button-next {
+            display: none;
+          }
+          .swiper-button-prev {
+            display: none;
+          }
+          .swiper-horizontal > .swiper-pagination-bullets,
+          .swiper-pagination-bullets.swiper-pagination-horizontal {
+            display: block;
+            position: relative;
+            bottom: -3px;
+          }
+          .swiper-horizontal
+            > .swiper-pagination-bullets
+            .swiper-pagination-bullet,
+          .swiper-pagination-horizontal.swiper-pagination-bullets
+            .swiper-pagination-bullet {
+            background-color: #004f3d;
+          }
+        }
+      }
+    }
+  }
+  .contact {
+    .contanier {
+      .row {
+        flex-direction: column;
+        align-items: center;
+        h2 {
+          font-size: 40px;
+        }
+        .contactInfo {
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          .leftContact {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            iframe {
+              width: 100%;
+            }
+          }
+          .rightContact {
+            margin-top: 10%;
+
+            p {
+              color: #004f3d;
+              font-size: 17px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+            }
+            a {
+              color: #004f3d;
+              font-size: 17px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+            }
+            form {
+              input {
+                width: 75%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .bestSeller {
+    width: 100%;
+    margin-top: 27%;
+    .contanier {
+      .row {
+        .bestTitle {
+          justify-content: center;
+          h2 {
+            font-size: 30px;
+          }
+        }
+        .bestcard{
+          display: flex;
+          width: 100%;
+          .swiper{
+            position:relative;
+          }
+          .swiper-wrapper{
+            height: 54vh;
+          }
+          .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+            bottom: var(--swiper-pagination-bottom, 6px);
+          }
+          .swiper-horizontal
+          > .swiper-pagination-bullets
+          .swiper-pagination-bullet,
+        .swiper-pagination-horizontal.swiper-pagination-bullets
+          .swiper-pagination-bullet {
+          background-color: #004f3d;
+        }
+          .swiper-backface-hidden .swiper-slide{
+           display: flex;
+           align-items: center;
+           justify-content: center;
+          }
+          .bestCard {
+            width: 66%;
+            border-radius: 10px;
+            border: 2px solid #f04923;
+            
+            .best {
+              width: 100%;
+            }
+          }
+            .bestInfo {
+              width: 98%;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              padding: 4%;
+              span {
+                color: #9c9c9c;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+              }
+            }
+            .bestDesc {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              padding: 4%;
+              h2 {
+                color: #000;
+                font-size: 27px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+              }
+              p {
+                color: #000;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px; /* 166.667% */
+              }
+            }
+          }
+        .bestSellerCard {
+          width: 100%;
+          .bestCard{
+            width: 70%;
+          }
+          .swiper-backface-hidden .swiper-slide {
+            width: 100% !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .swiper-button-next {
+            display: none;
+          }
+          .swiper-button-prev {
+            display: none;
+          }
+          .swiper-horizontal > .swiper-pagination-bullets,
+          .swiper-pagination-bullets.swiper-pagination-horizontal {
+            display: block;
+            position: relative;
+            bottom: -3px;
+          }
+          .swiper-horizontal
+            > .swiper-pagination-bullets
+            .swiper-pagination-bullet,
+          .swiper-pagination-horizontal.swiper-pagination-bullets
+            .swiper-pagination-bullet {
+            background-color: #004f3d;
+          }
+        }
+      }
+    }
+  }
+  //delicios
+  .deliciosPrice {
+    width: 100%;
+    margin-top: 10%;
+    .contanier {
+      .row {
+        .deliciosTitle {
+          justify-content: center;
+          h2 {
+            font-size: 30px;
+          }
+        }
+        .deliciosCard {
+          width: 100%;
+          .priceCard{
+            width: 70%;
+          }
+          .swiper-backface-hidden .swiper-slide {
+            width: 100% !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .swiper-button-next {
+            display: none;
+          }
+          .swiper-button-prev {
+            display: none;
+          }
+          .swiper-horizontal > .swiper-pagination-bullets,
+          .swiper-pagination-bullets.swiper-pagination-horizontal {
+            display: block;
+            position: relative;
+            bottom: -3px;
+          }
+          .swiper-horizontal
+            > .swiper-pagination-bullets
+            .swiper-pagination-bullet,
+          .swiper-pagination-horizontal.swiper-pagination-bullets
+            .swiper-pagination-bullet {
+            background-color: #004f3d;
+          }
+        }
+      }
+    }
+  }
+  .category {
+    .contanier {
+      .row {
+        .categoryTitle {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .categResp {
+         
+          .card {
+            width: 58%;
+          }
+        }
+      }
+    }
+  }
+  .ideaInspring {
+    .contanier {
+      .row {
+        .ideaFirst {
+          .ideaCard {
+            h3 {
+              color: #f04923;
+              font-size: 35px;
+              font-style: normal;
+              font-weight: bold;
+              line-height: normal;
+            }
+            p {
+              color: #004f3d;
+              text-align: center;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              width: 129px;
+            }
+          }
+        }
+        .ideaSecond {
+          .ideaCard {
+            h3 {
+              color: #f04923;
+              font-size: 35px;
+              font-style: normal;
+              font-weight: bold;
+              line-height: normal;
+            }
+            p {
+              color: #004f3d;
+              text-align: center;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              width: 129px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .specialOffer {
+    .contanier {
+      .row {
+        .special {
+          .specialCard {
+            width: 100%;
+            .specialInfo {
+              width: 100%;
+              height: 160px;
+              flex-shrink: 0;
+              h2 {
+                color: #fff;
+                text-align: center;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                width: 206px;
+              }
+              p {
+                color: #fff;
+                text-align: center;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px; /* 166.667% */
+                width: 265px;
+              }
+            }
+            .specialImg {
+              width: 100%;
+              height: 100%;
+              flex-shrink: 0;
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .bestSeller {
+    width: 100%;
+    margin-top: 10%;
+    .contanier {
+      .row {
+        .bestTitle {
+          h2 {
+            font-size: 30px;
+          }
+        }
+        .bestSellerCard {
+          .bestCard {
+            width: 100%;
+          }
+          width: 100%;
+          .swiper-backface-hidden .swiper-slide {
+            width: 100% !important;
+          }
+          .swiper-button-next {
+            display: none;
+          }
+          .swiper-button-prev {
+            display: none;
+          }
+          .swiper-horizontal > .swiper-pagination-bullets,
+          .swiper-pagination-bullets.swiper-pagination-horizontal {
+            display: block;
+            position: relative;
+            bottom: -3px;
+          }
+          .swiper-horizontal
+            > .swiper-pagination-bullets
+            .swiper-pagination-bullet,
+          .swiper-pagination-horizontal.swiper-pagination-bullets
+            .swiper-pagination-bullet {
+            background-color: #004f3d;
+          }
+        }
+      }
+    }
+  }
+  //delicios
+  .deliciosCard {
+    width: 100%;
+    margin-top: 10%;
+    .contanier {
+      .row {
+        .deliciosTitle {
+          h2 {
+            font-size: 30px;
+          }
+        }
+        .deliciosCard {
+          .priceCard {
+            width: 100%;
+          }
+          width: 100%;
+          .swiper-backface-hidden .swiper-slide {
+            width: 100% !important;
+          }
+          .swiper-button-next {
+            display: none;
+          }
+          .swiper-button-prev {
+            display: none;
+          }
+          .swiper-horizontal > .swiper-pagination-bullets,
+          .swiper-pagination-bullets.swiper-pagination-horizontal {
+            display: block;
+            position: relative;
+            bottom: -3px;
+          }
+          .swiper-horizontal
+            > .swiper-pagination-bullets
+            .swiper-pagination-bullet,
+          .swiper-pagination-horizontal.swiper-pagination-bullets
+            .swiper-pagination-bullet {
+            background-color: #004f3d;
+          }
+        }
+      }
+    }
+  }
+  .category {
+    width: 100%;
+    .contanier {
+      .row {
+     
+        .categoryTitle {
+          h2 {
+            font-size: 30px;
+          }
+        }
+        .categories {
+          width: 100%;
+          .card {
+            height: 30vh;
+            h4 {
+              color: #004f3d;
+              font-size: 20px;
+              font-style: normal;
+              font-weight: bold;
+              line-height: normal;
+            }
+          }
+          .swiper-backface-hidden .swiper-slide {
+            width: 100% !important;
+          }
+          .swiper-button-next {
+            display: none;
+          }
+          .swiper-button-prev {
+            display: none;
+          }
+          .swiper-horizontal > .swiper-pagination-bullets,
+          .swiper-pagination-bullets.swiper-pagination-horizontal {
+            display: block;
+            position: absolute;
+            bottom: -3px;
+          }
+          .swiper-horizontal
+            > .swiper-pagination-bullets
+            .swiper-pagination-bullet,
+          .swiper-pagination-horizontal.swiper-pagination-bullets
+            .swiper-pagination-bullet {
+            background-color: #004f3d;
+          }
+        }
+      }
+    }
+  }
+}
+}
+

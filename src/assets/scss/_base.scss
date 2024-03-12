@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;600;700&family=Source+Code+Pro:wght@200;300;400;500;600;700;800;900&display=swap');@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'AR One Sans', sans-serif;
+}
+
+.contanier{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+}
+
+main{
+  background: #ffefd2;
+}

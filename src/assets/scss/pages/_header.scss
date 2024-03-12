@@ -1,0 +1,465 @@
+.header {
+  width: 100%;
+  background: #ffefd2;
+  .contanier {
+    .row {
+      flex-direction: column;
+      .headerComp {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .logo {
+          width: 50%;
+          padding: 20px;
+          display: flex;
+
+          img {
+            width: 76%;
+          }
+        }
+        .searchComp {
+          width: 50%;
+          display: flex;
+          .searchInp {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #f04923;
+            border-radius: 15px;
+            width: 66%;
+            height: 40px;
+
+            .item {
+              border-radius: 10px;
+              background: #004f3d;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              height: 32px;
+              width: 6%;
+              color: #fff;
+              font-size: 15px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+              position: absolute;
+              left: 50.4%;
+              &:hover {
+                .dropdownContent {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 10%;
+                }
+              }
+              .dropdownContent {
+                display: none;
+                z-index: 999;
+                position: absolute;
+                background-color: #004f3d;
+                border: 1px solid #f04923;
+                width: 100px;
+                padding: 5%;
+                top: 94%;
+                height: 16vh;
+                border-radius: 15px;
+                overflow-y: scroll;
+                a {
+                  color: #ffefd2;
+                }
+              }
+            }
+            input {
+              position: relative;
+              border: none;
+              outline: none;
+              background: transparent;
+              width: 47%;
+            }
+            .search {
+              position: absolute;
+              width: 45px;
+              height: 40px;
+              padding: 8px;
+              color: #fff;
+              flex-shrink: 0;
+              border-radius: 15px;
+              background: #f04923;
+              right: 22%;
+            }
+          }
+          .cash {
+            display: flex;
+            margin-left: 2%;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+            .mainMenu {
+              display: none;
+            }
+            .burgerMenu {
+              display: none;
+              justify-content: space-between;
+              align-items: center;
+              padding: 10px;
+              #checkbox {
+                display: none;
+              }
+
+              .toggle {
+                position: relative;
+                width: 40px;
+                height: 40px;
+                cursor: pointer;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                transition-duration: 0.5s;
+                z-index: 999;
+              }
+
+              .bars {
+                width: 100%;
+                height: 4px;
+                background-color: #f04923;
+                border-radius: 4px;
+              }
+
+              #bar2 {
+                transition-duration: 0.8s;
+              }
+
+              #bar1,
+              #bar3 {
+                width: 70%;
+              }
+
+              #checkbox:checked + .toggle .bars {
+                position: absolute;
+                transition-duration: 0.5s;
+              }
+
+              #checkbox:checked + .toggle #bar2 {
+                transform: scaleX(0);
+                transition-duration: 0.5s;
+              }
+
+              #checkbox:checked + .toggle #bar1 {
+                width: 100%;
+                transform: rotate(45deg);
+                transition-duration: 0.5s;
+              }
+
+              #checkbox:checked + .toggle #bar3 {
+                width: 100%;
+                transform: rotate(-45deg);
+                transition-duration: 0.5s;
+              }
+
+              #checkbox:checked + .toggle {
+                transition-duration: 0.5s;
+                transform: rotate(180deg);
+              }
+            }
+
+            .burger-menu-icon {
+              width: 30px;
+              height: 20px;
+              cursor: pointer;
+            }
+
+            .burger-menu-icon-line {
+              width: 100%;
+              height: 3px;
+              background-color: #333;
+              margin-bottom: 5px;
+            }
+
+            .burgerMenuItems li {
+              margin-bottom: 10px;
+            }
+          }
+          .prestigeCard {
+            a {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              color: #004f3d;
+              font-size: 17px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              text-align: center;
+            }
+          }
+          .login {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            a {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              color: #004f3d;
+              font-size: 17px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+    .navComp {
+      width: 100%;
+      span {
+        width: 100%;
+        height: 1px;
+        background: #004f3d;
+        display: flex;
+        margin-bottom: 10px;
+      }
+      .navBar {
+        display: f;
+        .navList {
+          display: flex;
+          gap: 1%;
+          align-items: center;
+          justify-content: center;
+
+         .baku{
+          margin-right: 4%;
+         }
+          .dropItem {
+            position: relative;
+            text-align: center;
+            color: #000;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            display: flex;
+            gap: 10px;
+            z-index: 999;
+            
+            &:hover {
+              .dropdownContent {
+                display: flex;
+                flex-direction: column;
+                transition: 0.5s all ease-in-out;
+                align-items: flex-start;
+                justify-content: center;
+                gap: 10px;
+              }
+            }
+            .dropdownContent {
+              display: none;
+              border-radius: 15px;
+              position: absolute;
+              background-color: transparent;
+              border: 1px solid #f04923;
+              padding: 4%;
+              top: 94%;
+              background-color: #ffefd2;
+              width: 100px;
+              a {
+                color: #004f3d;
+              }
+            }
+            .catalogDrop {
+              display: none;
+              border-radius: 15px;
+              position: absolute;
+              background-color: transparent;
+              border: 1px solid #f04923;
+              padding: 4%;
+              top: 94%;
+              background-color: #ffefd2;
+              overflow-y: scroll;
+              height: 200px;
+              width: 400px;
+              a {
+                color: #004f3d;
+              }
+            }
+          }
+          .navItem {
+            display: flex;
+            align-items: center;
+            color: #004f3d;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            a {
+              display: flex;
+              align-items: center;
+              color: #000;
+              font-size: 15px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1056px) {
+  .header {
+    width: 100%;
+    .contanier {
+      .row {
+        .searchComp {
+          .cash{
+            .prestigeCard{
+              display: none;
+            }
+            .login{
+              display: none;
+            }
+          }
+          .searchInp {
+            display: none !important;
+            
+          }
+          .burgerMenu {
+            display: flex !important;
+            .mainMenu {
+              display: none;
+              flex-direction: column;
+              position: absolute;
+              right: 4%;
+              top: 8%;
+              padding: 4%;
+              max-width: 315px;
+              background: #fff;
+              font-family: aktiv-grotesk, arial, sans-serif;
+              font-size: 14px;
+              font-weight: 400;
+              z-index: 100;
+              opacity: 1;
+              transform: translateX(0);
+              transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+              &.active {
+                display: flex;
+              }
+              .burgerMenuItem {
+                display: flex;
+                flex-direction: column;
+                .admin{
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+                  color: #004f3d;
+                  font-size: 17px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: normal;
+                  text-align: center;
+                }
+                .card{
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+                  color: #004f3d;
+                  font-size: 17px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: normal;
+                  text-align: center;
+                }
+                li {
+                  margin-right: 10px;
+                  
+                  justify-content: space-between;
+                  background-size: 29px;
+                  padding-left: 65px;
+                  padding-top: 5px;
+                  margin: 0 0 0 -35px;
+                  flex-direction: column;
+                  .dropdownContent{
+                    display: flex;
+                    flex-direction: column;
+                    overflow-y: scrool;
+                    overflow-y: scroll;
+                    height: 200px;
+                    background:#ffefd2;
+                    gap: 12px;
+                
+                    a{
+                      color: black;
+                      font-size: 15px;
+                      font-weight: bold;
+                    }
+                  }
+                
+
+                  a {
+                    color: black;
+                    font-size: 16px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .navComp {
+          width: 100%;
+          .navBar {
+            display: none !important;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 468px) {
+  .header {
+    .contanier {
+      .row {
+        .headerComp {
+          .searchComp {
+            width: 16%;
+            .cash {
+              gap: 8px;
+              .login {
+                margin-bottom: 12%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .header {
+    .contanier {
+      .row {
+        .cash {
+          .prestigeCard {
+            display: none;
+          }
+          .login {
+            display: none !important;
+          }
+        }
+      }
+    }
+  }
+}
